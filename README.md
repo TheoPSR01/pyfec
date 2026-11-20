@@ -18,7 +18,7 @@ En attendant la publication sur PyPI :
 pip install git+https://github.com/TheoPSR01/pyfec.git
 ```
 
-Python 3.9 ou plus récent.
+Python 3.10 ou plus récent.
 
 ## En ligne de commande
 
