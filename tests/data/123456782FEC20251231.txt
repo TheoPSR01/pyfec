@@ -1,0 +1,11 @@
+JournalCode	JournalLib	EcritureNum	EcritureDate	CompteNum	CompteLib	CompAuxNum	CompAuxLib	PieceRef	PieceDate	EcritureLib	Debit	Credit	EcritureLet	DateLet	ValidDate	Montantdevise	Idevise
+AN	A nouveaux	1	20250101	101000	Capital			AN1	20250101	Reprise a nouveaux	0,00	10000,00			20250105		
+AN	A nouveaux	1	20250101	512000	Banque			AN1	20250101	Reprise a nouveaux	10000,00	0,00			20250105		
+VT	Ventes	1	20250115	411000	Clients	C001	Boucherie Martin	F2025-001	20250115	Facture F2025-001	1200,00	0,00	A	20250210	20250120		
+VT	Ventes	1	20250115	706000	Prestations de services			F2025-001	20250115	Facture F2025-001	0,00	1000,00			20250120		
+VT	Ventes	1	20250115	445710	TVA collectée			F2025-001	20250115	Facture F2025-001	0,00	200,00			20250120		
+HA	Achats	1	20250120	607000	Achats de marchandises			FA-889	20250118	Achat viande	500,00	0,00			20250121		
+HA	Achats	1	20250120	445660	TVA déductible			FA-889	20250118	Achat viande	100,00	0,00			20250121		
+HA	Achats	1	20250120	401000	Fournisseurs	F001	Abattoir du Maine	FA-889	20250118	Achat viande	0,00	600,00			20250121		
+BQ	Banque	1	20250210	512000	Banque			REL-02	20250210	Reglement Boucherie Martin	1200,00	0,00			20250211		
+BQ	Banque	1	20250210	411000	Clients	C001	Boucherie Martin	REL-02	20250210	Reglement Boucherie Martin	0,00	1200,00	A	20250210	20250211		
