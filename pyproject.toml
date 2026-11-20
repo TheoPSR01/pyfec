@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pyfec"
+version = "0.1.0"
+description = "Lire, contrôler et analyser un Fichier des Écritures Comptables (FEC) français"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.9"
+authors = [{ name = "Théo Pasquier" }]
+keywords = ["FEC", "comptabilité", "fichier des écritures comptables", "audit", "DGFiP", "balance"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Natural Language :: French",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Office/Business :: Financial :: Accounting",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[project.scripts]
+pyfec = "pyfec.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/TheoPSR01/pyfec"
+Issues = "https://github.com/TheoPSR01/pyfec/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pyfec"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
