@@ -32,6 +32,8 @@ def codes(rapport):
     ("1 234,56", Decimal("1234.56")),
     ("", Decimal("0")),
     ("-12,5", Decimal("-12.5")),
+    (" 000000000003000,00", Decimal("3000.00")),   # format d'export Odoo
+    ("-000000000001000,00", Decimal("-1000.00")),
 ])
 def test_parse_montant(brut, attendu):
     assert parse_montant(brut) == attendu
