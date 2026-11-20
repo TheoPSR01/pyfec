@@ -9,7 +9,7 @@ description = "Lire, contrôler et analyser un Fichier des Écritures Comptables
 readme = "README.md"
 license = "MIT"
 license-files = ["LICENSE"]
-requires-python = ">=3.9"
+requires-python = ">=3.10"
 authors = [{ name = "Théo Pasquier" }]
 keywords = ["FEC", "comptabilité", "fichier des écritures comptables", "audit", "DGFiP", "balance"]
 classifiers = [
